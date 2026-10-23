@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.age-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.age-card {
+  width: 100%;
+  max-width: 720px;
+  padding: 36px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.age-card h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 36px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.form-row label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-row input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+.date-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 26px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.date-info strong {
+  color: #047857;
+}
+
+.age-card button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #047857;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.age-card button:hover {
+  background: #065f46;
+}
+
+.result {
+  margin-top: 28px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+  background: #ecfdf5;
+}
+
+.result h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.age-numbers {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.age-numbers div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.age-numbers strong {
+  color: #047857;
+  font-size: 32px;
+}
+
+.age-numbers span {
+  font-size: 14px;
+  color: #475569;
+}
+
+.result p {
+  font-size: 16px;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .age-card {
+    padding: 22px;
+  }
+
+  .age-card h1 {
+    font-size: 23px;
+  }
+
+  .age-numbers strong {
+    font-size: 26px;
+  }
+}
